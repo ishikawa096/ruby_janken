@@ -48,6 +48,7 @@ def acchihoi_process
   bot_dir = directions[bot_act]
   puts "あなた:#{user_dir}"
   puts "相手:#{bot_dir}" 
+  puts "---------------"
   return user_act,bot_act
 end
 
@@ -79,6 +80,7 @@ while is_end == false
   bot_hand = hands[bot_act]
   puts "あなた:#{user_hand}を出しました"
   puts "相手:#{bot_hand}を出しました" 
+  puts "---------------"
   if user_act == bot_act
     puts "あいこで..."
     is_after_drew = true
